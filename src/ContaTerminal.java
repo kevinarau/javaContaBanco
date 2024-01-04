@@ -15,12 +15,18 @@ public class ContaTerminal {
         System.out.println("Por favor, digite o nome do Cliente:");
         String nomeCliente = scanner.nextLine();
 
+        System.out.println("Por favor, colocar seu CPF");
+        String cpfcliente = scanner.nextLine();
+
+
         System.out.println("Por favor, digite o saldo da Conta:");
         double saldo = scanner.nextDouble();
 
+
+
         // Mensagem de agradecimento com os dados da conta
         String mensagem = "Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " +
-                agencia + ", conta " + numeroConta + " e seu saldo " + saldo + " já está disponível para saque.";
+                agencia + ", conta " + numeroConta + ", seu cpf"  + cpfcliente +  " e seu saldo " + saldo + " já está disponível para saque.";
 
         System.out.println(mensagem);
 
