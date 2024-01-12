@@ -28,7 +28,12 @@ public class ContaTerminal {
         String mensagem = "Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " +
                 agencia + ", conta " + numeroConta + ", seu cpf"  + cpfCliente +  " e seu saldo " + saldo + " já está disponível para saque.";
 
-        System.out.println(mensagem);
+        String  mensagemContaVerificada = "Conta verificada sr" + nomeCliente;
+
+                System.out.println(mensagem);
+                System.out.println( mensagemContaVerificada);
+
+
 
         // Fechar o scanner para evitar vazamentos de recursos
         scanner.close();
